@@ -1,0 +1,70 @@
+.theme {
+  --background: #ffffff;
+  --base-font-size: 16px;
+  --body-text-color: #333333;
+  --button-bg-color: var(--background);
+  --button-bg-color-hover: #efefef;
+  --button-border-color: #333333;
+  --button-text-color: #333333;
+  --font-family: "Gelasio";
+  --heading-text-color: #222222;
+  --max-width: 800px;
+}
+
+.theme.dark {
+  --background: #222222;
+  --body-text-color: #ffffff;
+  --button-bg-color: var(--background);
+  --button-bg-color-hover: #111111;
+  --button-border-color: #ffffff;
+  --button-text-color: #ffffff;
+  --heading-text-color: #ffffff;
+}
+
+html,
+body {
+  background-color: var(--background);
+  font-family: var(--font-family);
+  max-width: var(--max-width);
+  font-size: var(--base-font-size);
+}
+
+body {
+  padding: 1.5em;
+}
+
+h1 {
+  color: var(--heading-text-color);
+}
+
+p {
+  color: var(--body-text-color);
+  font-size: 1.2em;
+}
+
+button {
+  color: var(--button-text-color);
+  background-color: var(--button-bg-color);
+  border: 1px solid var(--button-border-color);
+  height: 3em;
+  font-size: 1.2em;
+  padding: 0 1em;
+  cursor: pointer;
+  min-width: 140px;
+}
+
+button:hover {
+  background-color: var(--button-bg-color-hover);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  .theme {
+    --background: #222222;
+    --body-text-color: #ffffff;
+    --button-bg-color: var(--background);
+    --button-bg-color-hover: #111111;
+    --button-border-color: #ffffff;
+    --button-text-color: #ffffff;
+    --heading-text-color: #ffffff;
+  }
+} */
